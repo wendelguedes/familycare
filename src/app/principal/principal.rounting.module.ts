@@ -1,3 +1,4 @@
+import { ConsultaComponent } from './consulta/consulta.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { PrincipalComponent } from './principal.component';
@@ -13,6 +14,10 @@ const routes: Routes = [
       {
         path: 'novo-medicamento', 
         component: NovoMedicamentoComponent
+      },
+      {
+        path: 'consulta', 
+        component: ConsultaComponent
       }
     ]
   } 

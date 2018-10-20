@@ -1,3 +1,4 @@
+import { ConsultaComponent } from './consulta/consulta.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -21,6 +22,7 @@ import { CoreModule } from '../core/core.module';
         MenuComponent,
         FooterComponent,
         NovoMedicamentoComponent,
+        ConsultaComponent
     ],
     imports: [
         HttpClientModule,
