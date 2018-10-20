@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { NotFoundComponent } from './errors/not-found/not-found.component';
-import { PrincipalComponent } from './principal/principal.component';
-import { AuthGuardPricipal } from './core/auth/auth-principal.guard';
 
-const APP_ROUTES: Routes = [
+const routes: Routes = [
     {
         path:'',
         pathMatch:'full',
@@ -16,9 +13,8 @@ const APP_ROUTES: Routes = [
         loadChildren: './home/home.module#HomeModule'
     },
     {
-        path: 'principal', 
-        component: PrincipalComponent,
-        canActivate: [AuthGuardPricipal]
+        path: 'principal',
+        loadChildren: './principal/principal.module#PrincipalModule'
     },
     {
         path: '**', 
@@ -28,7 +24,7 @@ const APP_ROUTES: Routes = [
 
 @NgModule({
     imports: [
-        RouterModule.forRoot(APP_ROUTES,{useHash:true})
+        RouterModule.forRoot(routes,{useHash:true})
     ],
     exports: [RouterModule]
 })

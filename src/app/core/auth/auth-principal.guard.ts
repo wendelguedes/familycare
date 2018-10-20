@@ -15,7 +15,7 @@ export class AuthGuardPricipal implements CanActivate {
         next: ActivatedRouteSnapshot,
         state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
           if (!this.userService.isLogged()) {
-            this.router.navigate(['']);
+            this.router.navigate(['home']);
             return false;
           }
           return true;

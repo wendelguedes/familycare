@@ -23,21 +23,22 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/assets/bower_components/bootstrap/dist/css/bootstrap.min.css",
-              "src/assets/bower_components/font-awesome/css/font-awesome.min.css",
-              "src/assets/bower_components/Ionicons/css/ionicons.min.css",
-              "src/assets/bower_components/jvectormap/jquery-jvectormap.css",
-              "src/assets/css/skins/_all-skins.min.css",
-              "src/assets/css/AdminLTE.min.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/font-awesome/css/font-awesome.min.css",
+              "./node_modules/admin-lte/dist/css/AdminLTE.min.css",
+              "./node_modules/admin-lte/dist/css/skins/_all-skins.min.css",
+              "./node_modules/ionicons/dist/css/ionicons.min.css",
+              "./node_modules/jvectormap/jquery-jvectormap.css",
+              "src/styles.css"
             ],
             "scripts": [
-              "src/assets/bower_components/jquery/dist/jquery.min.js",
-              "src/assets/bower_components/bootstrap/dist/js/bootstrap.min.js",
-              "src/assets/bower_components/fastclick/lib/fastclick.js",
-              "src/assets/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js",
-              "src/assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js",
-              "src/assets/js/adminlte.min.js"
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/jquery-ui-dist/jquery-ui.js",
+              "./node_modules/jquery-sparkline/jquery.sparkline.js",
+              "./node_modules/jvectormap/jquery-jvectormap.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/fastclick/lib/fastclick.js",
+              "./node_modules/admin-lte/dist/js/adminlte.min.js"
             ]
           },
           "configurations": {
