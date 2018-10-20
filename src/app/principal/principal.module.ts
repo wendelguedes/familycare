@@ -10,6 +10,9 @@ import { NovoMedicamentoComponent } from './novo-medicamento/novo-medicamento.co
 import { PrincipalRoutingModule } from './principal.rounting.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { VmessageModule } from '../shared/components/vmessage/vmessage.module';
+import { NovoMedicamentoService } from './novo-medicamento/novo-medicamento.service';
+import { HttpClientModule } from '@angular/common/http';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
     declarations:[
@@ -20,12 +23,17 @@ import { VmessageModule } from '../shared/components/vmessage/vmessage.module';
         NovoMedicamentoComponent,
     ],
     imports: [
+        HttpClientModule,
         CommonModule,
         RouterModule,
         PrincipalRoutingModule,
         ReactiveFormsModule,
         FormsModule, 
-        VmessageModule
+        VmessageModule,
+        CoreModule,
+    ],
+    providers:[
+        NovoMedicamentoService
     ]
 })
 export class PrincipalModule{}
