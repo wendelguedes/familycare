@@ -1,9 +1,8 @@
+import { API_URL } from './../../ambiente/ambiente';
 
 import { Injectable } from '@angular/core';
 import { Medicameto } from './medicamento';
 import { HttpClient } from '@angular/common/http';
-
-const API_URL:string = 'http://localhost:8080/';
 
 @Injectable()
 export class NovoMedicamentoService {

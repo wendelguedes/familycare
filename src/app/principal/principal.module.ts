@@ -1,3 +1,4 @@
+import { ConsultaService } from './consulta/consulta.service';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -35,7 +36,8 @@ import { CoreModule } from '../core/core.module';
         CoreModule,
     ],
     providers:[
-        NovoMedicamentoService
+        NovoMedicamentoService,
+        ConsultaService
     ]
 })
 export class PrincipalModule{}
